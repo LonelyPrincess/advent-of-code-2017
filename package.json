@@ -1,0 +1,20 @@
+{
+  "name": "aoc2017",
+  "version": "0.0.1",
+  "description": "Solutions for the challenges proposed in Advent of Code 2017.",
+  "scripts": {
+    "test": "jasmine-node --verbose ."
+  },
+  "keywords": [
+    "advent of code 2017",
+    "challenge",
+    "javascript",
+    "node",
+    "npm"
+  ],
+  "author": "Sara Hernández <sara.her.su@gmail.com>",
+  "private": true,
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
