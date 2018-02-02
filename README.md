@@ -18,8 +18,8 @@ The project is divided in multiple folders, one for each of the available challe
 The following list describes which of the puzzles have been solved so far in this project, and which are still on the works. This will be updated as progress is made and more modules become available.
 
 * **[Day 1: Inverse Captcha](http://adventofcode.com/2017/day/1)**
-    - [X] [Part 1](day1/part1)
-    - [X] [Part 2](day1/part2)
+    - [X] [Part 1](src/day1/part1)
+    - [X] [Part 2](src/day1/part2)
 
 * **[Day 2: Corruption Checksum](http://adventofcode.com/2017/day/2)**
     - [ ] Part 1
