@@ -19,7 +19,7 @@ The following list describes which of the puzzles have been solved so far in thi
 
 * **[Day 1: Inverse Captcha](http://adventofcode.com/2017/day/1)**
     - [X] [Part 1](day1/part1)
-    - [ ] Part 2
+    - [X] [Part 2](day1/part2)
 
 * **[Day 2: Corruption Checksum](http://adventofcode.com/2017/day/2)**
     - [ ] Part 1
