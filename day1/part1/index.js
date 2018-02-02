@@ -11,19 +11,43 @@
  * @param {string} input - A string representing a numeric value.
  * @return {number} - Sum of digits that match the next in the list.
  */
-const solveCaptcha = function (input) {
-    let res = 0,
-        seq = input.toString().split("").map((digit) => parseInt(digit));
+const solveCaptcha = function (input = "") {
+  const sequence = getDigitSequence(input);
 
-    for (let i = 0; i < seq.length; i++) {
-        if (seq[i] === (seq[i + 1] || seq[0])) {
-            res += seq[i];
-        }
+  if (!sequence) {
+    console.error(`Invalid input! Make sure it doesn't contain non-numeric values.`);
+    return null;
+  }
+
+  let result = 0;
+  for (let i = 0; i < sequence.length; i++) {
+    if (sequence[i] === (sequence[i + 1] || sequence[0])) {
+      result += sequence[i];
     }
+  }
 
-    return res;
+  return result;
 };
 
-// TODO: validate input (it can't contain non-numerical values)
+/**
+ * Converts input string into an array of numbers and returns said array.
+ * If any of the characters in the string is not a number, `null` will be
+ * returned instead.
+ * @param {string} input
+ * @return Array of numeric values or `null` if input is not valid.
+ */
+const getDigitSequence = function (input) {
+  let invalidInput = false;
+
+  const sequence = input.split("").map((digit) => {
+    const int = parseInt(digit);
+    if (isNaN(int)) {
+      invalidInput = true;
+    }
+    return int;
+  });
+
+  return !invalidInput ? sequence : null;
+};
 
 module.exports = solveCaptcha;
