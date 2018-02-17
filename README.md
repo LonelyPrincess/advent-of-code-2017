@@ -30,5 +30,5 @@ The following list describes which of the puzzles have been solved so far in thi
     - [ ] Part 2
 
 * **[Day 4: High-Entropy Passphrases](http://adventofcode.com/2017/day/4)**
-    - [ ] Part 1
+    - [X] [Part 1](src/day4/part1)
     - [ ] Part 2
