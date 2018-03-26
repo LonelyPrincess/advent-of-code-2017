@@ -32,3 +32,7 @@ The following list describes which of the puzzles have been solved so far in thi
 * **[Day 4: High-Entropy Passphrases](http://adventofcode.com/2017/day/4)**
     - [X] [Part 1](src/day4/part1)
     - [X] [Part 2](src/day4/part2)
+
+* **[Day 5: A Maze of Twisty Trampolines, All Alike](http://adventofcode.com/2017/day/5)**
+    - [X] [Part 1](src/day5/part1)
+    - [ ] Part 2
